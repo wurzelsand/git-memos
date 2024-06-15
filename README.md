@@ -16,7 +16,7 @@
 * ```git commit -m "okay"```
 * ```git push```
 
-But now I received the following error message after `git pull`:
+But now I received the following error message after `git pull` applied to an older repository:
 
 ```
 fatal: unable to update url base from redirection:
@@ -36,7 +36,7 @@ What helped, although I don't know  how:
 * Edit origin: `git config --edit` and/or set remote **with** `.git` as extension and **whithout** token:
 
     ```
-    git remote set-url origin https://github.com/wurzelsand/git-memos.git
+    git remote set-url origin https://github.com/wurzelsand/flutter-memos.wiki.git
     ```
 
 
